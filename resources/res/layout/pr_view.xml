@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/rm_view" android:background="@drawable/green_border" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="18sp" android:textColor="#4ea07d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="{fa-trophy}"/>
+        <TextView android:textSize="15sp" android:textColor="#4ea07d" android:id="@+id/rm_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/vol_view" android:background="@drawable/green_border" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="18sp" android:textColor="#4ea07d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="{fa-trophy}"/>
+        <TextView android:textSize="15sp" android:textColor="#4ea07d" android:id="@+id/volume_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

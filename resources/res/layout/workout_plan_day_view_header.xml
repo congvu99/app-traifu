@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/noteViewContainer" android:background="@color/white" android:paddingLeft="17dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:elevation="5dp">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/lightTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOTE:"/>
+            <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/workoutNoteView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:lineHeight="22sp"/>
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/tintColor" android:id="@+id/edit_note_btn" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDIT"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_state" android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="170dp" android:layout_height="170dp" android:src="@drawable/empty_state"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:id="@+id/empty_state_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="No Exercises"/>
+            <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/empty_state_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Create workout using the buttons below "/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

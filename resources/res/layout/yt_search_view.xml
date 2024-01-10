@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" app:spb_color="@color/lightGrayColor" app:spb_mirror_mode="false" app:spb_progressiveStart_activated="true" app:spb_progressiveStart_speed="1" app:spb_progressiveStop_speed="3.4" app:spb_reversed="false" app:spb_sections_count="4" app:spb_speed="1" app:spb_stroke_separator_length="4dp" app:spb_stroke_width="4dp"/>
+    <ListView android:id="@+id/search_result_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@color/black75PercentColor" android:dividerHeight="1dp"/>
+</LinearLayout>

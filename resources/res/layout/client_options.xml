@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/diary_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/diary_icon" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/Diary"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/assessment_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/assesment_icon" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/assessments"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/notes_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/notes_icon" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/notes"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/track_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080121" android:scaleType="centerInside" app:tint="@color/iconColor"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/trackEmptyWorkout"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/settings_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f08014c" android:scaleType="centerInside" app:tint="@color/iconColor"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/settings"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/delete_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_delete" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/deleteClient"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/cancel_view" android:background="?android:attr/selectableItemBackground" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_cancel" android:scaleType="centerInside"/>
+        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</LinearLayout>

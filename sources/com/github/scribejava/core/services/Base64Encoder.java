@@ -1,0 +1,29 @@
+package com.github.scribejava.core.services;
+
+public abstract class Base64Encoder {
+    private static Base64Encoder instance;
+
+    public abstract String encode(byte[] bArr);
+
+    public abstract String getType();
+
+    public static Base64Encoder getInstance() {
+        synchronized (Base64Encoder.class) {
+            if (instance == null) {
+                instance = createEncoderInstance();
+            }
+        }
+        return instance;
+    }
+
+    private static Base64Encoder createEncoderInstance() {
+        if (CommonsEncoder.isPresent()) {
+            return new CommonsEncoder();
+        }
+        return new DatatypeConverterEncoder();
+    }
+
+    public static String type() {
+        return getInstance().getType();
+    }
+}

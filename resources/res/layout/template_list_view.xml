@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/template_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:footerDividersEnabled="false"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_state" android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="170dp" android:layout_height="170dp" android:src="@drawable/empty_state"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:id="@+id/empty_state_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="No Plan Templates"/>
+        <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/empty_state_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Create Template using the button below "/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="0x7f080108" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="@color/primary" app:rippleColor="@color/lightPrimary"/>
+</RelativeLayout>

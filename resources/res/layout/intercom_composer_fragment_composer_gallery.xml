@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/gallery_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/gallery_content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/gallery_recycler_view" android:padding="4dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:visibility="gone" android:fitsSystemWindows="@bool/intercom_composer_fits_system_windows" android:outlineProvider="bounds" layout="@layout/intercom_composer_loading_view"/>
+    </FrameLayout>
+    <com.intercom.input.gallery.EmptyView android:id="@+id/gallery_empty_view" android:background="@color/intercom_composer_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:intercom_composer_actionButtonText="@string/intercom_allow_access" app:intercom_composer_internalPaddingBottom="16dp" app:intercom_composer_internalPaddingLeft="16dp" app:intercom_composer_internalPaddingRight="16dp" app:intercom_composer_internalPaddingTop="16dp" app:intercom_composer_subtitleText="@string/intercom_allow_storage_access" app:intercom_composer_titleText="@string/intercom_photo_access_denied"/>
+</LinearLayout>

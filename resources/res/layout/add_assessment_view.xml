@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/chartBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="19dp" android:paddingTop="15dp" android:paddingRight="19dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/black50PercentColor" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Set Date" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:gravity="center_vertical" android:id="@+id/dateTV" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="#a5a9ac" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="15dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/dataTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email">
+            <EditText android:textSize="16dp" android:textColor="@color/black25PercentColor" android:id="@+id/measureET" android:focusable="true" android:layout_width="match_parent" android:layout_height="44dp" android:layout_weight="1" android:inputType="numberDecimal" android:imeOptions="actionDone" android:textCursorDrawable="@null" android:backgroundTint="@color/primary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <View android:background="@color/lightGrayColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

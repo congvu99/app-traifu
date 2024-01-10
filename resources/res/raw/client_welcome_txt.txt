@@ -1,0 +1,16 @@
+Hi [param_name],
+
+I have created a new [param_app_name] app account for you. [param_app_name] app would let us collaborate and help you meet your fitness goals faster.
+
+Click on the appropriate link below to download the free app on your iPhone, iPad or Android device:
+
+For iPhone or iPad ==> [param_ios_app_url]
+
+For Android ==> [param_android_app_url]
+
+Once you have downloaded the app, use the below email and password to login to the app:
+Email ==> [param_email]
+Password ==> [param_password]
+
+If you have any questions, please let me know.
+Thanks, have a lovely day.

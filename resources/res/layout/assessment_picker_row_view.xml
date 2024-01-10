@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/contentView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iconView" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="15dp" android:scaleType="centerInside"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/nameView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/goalView" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <View android:id="@+id/completedView" android:background="@color/successColor" android:layout_width="1dp" android:layout_height="3dp"/>
+                        <View android:background="@color/grayColor" android:layout_width="180dp" android:layout_height="1dp"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/grayColor" android:id="@+id/goalDetailView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/grayColor" android:id="@+id/latestValueView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.joanzapata.iconify.widget.IconTextView android:textSize="19sp" android:textColor="@color/grayColor" android:id="@+id/arrowView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="17dp" android:text="{fa-angle-right}"/>
+            </LinearLayout>
+            <View android:id="@+id/dividerView" android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

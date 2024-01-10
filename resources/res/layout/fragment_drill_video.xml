@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView android:id="@+id/youtube_player_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp" app:autoPlay="false" app:showFullScreenButton="false"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:paddingHorizontal="17dp">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/textColor" android:id="@+id/exercise_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="@color/textColor" android:id="@+id/exercise_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

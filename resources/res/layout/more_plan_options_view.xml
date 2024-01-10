@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/add_upcoming_plan" android:background="@color/tintColor" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/add_icon" android:tint="@color/white"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/add_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addUpcomingPlan"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/copy_from_plan_template" android:background="@color/tintColor" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080118" android:tint="@color/white"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/copy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copyFromPlanTemplate"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/copy_template_to_groups" android:background="@color/tintColor" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080118" android:tint="@color/white"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/copy_template_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copyFromPlanTemplate"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/toggle_plans_view" android:background="@color/tintColor" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f08011f" android:tint="@color/white"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/toggle_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/seePastPlans"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/intercom_cell_horizontal_padding" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/avatarView" android:layout_width="@dimen/intercom_avatar_size" android:layout_height="@dimen/intercom_avatar_size" android:contentDescription="Teammate avatar"/>
+    </FrameLayout>
+    <io.intercom.android.sdk.views.AttributeCollectorCardView android:orientation="vertical" android:id="@+id/cellLayout" android:padding="@dimen/intercom_container_cell_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/intercom_cell_horizontal_padding" style="@style/intercom_card_with_shadow"/>
+</FrameLayout>

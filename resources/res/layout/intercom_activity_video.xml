@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fullscreen_video_layout" android:background="@color/intercom_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <VideoView android:layout_gravity="center" android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/video_view_overlay" android:background="@color/intercom_black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading_view" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" android:accessibilityLiveRegion="polite" style="?android:attr/progressBarStyleLarge"/>
+    <io.intercom.android.sdk.views.IntercomToolbar android:id="@+id/intercom_toolbar" style="@style/intercom_toolbar_style"/>
+</FrameLayout>

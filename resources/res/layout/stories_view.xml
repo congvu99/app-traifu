@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_base" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_state" android:background="#eeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_width="170dp" android:layout_height="170dp" android:layout_marginTop="100dp" android:src="@drawable/empty_state"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="Post not found"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh_view" android:background="#e6e6e6" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/list_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:cacheColorHint="#00000000" android:divider="@android:color/transparent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@+id/add_comment_view" android:background="@color/veryLightBackground" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_text_white_background" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/commentET" android:background="@android:color/transparent" android:focusable="true" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Write a comment..." android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine">
+                <requestFocus/>
+            </EditText>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_send" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="10dp" android:src="@drawable/icon_send" android:scaleType="fitCenter" android:onClick="onAddComment"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/dummy_id" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="0dp"/>
+    </RelativeLayout>
+</RelativeLayout>

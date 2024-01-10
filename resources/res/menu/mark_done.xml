@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_md_edit" android:visible="false" android:title="@string/action_md_edit"/>
+    <item android:id="@+id/action_md_cancel" android:visible="false" android:title="@string/action_md_cancel"/>
+    <item android:icon="@drawable/icon_check" android:id="@+id/post_item" android:visible="false" android:title="✓" app:showAsAction="always"/>
+</menu>

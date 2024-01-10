@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/awardWrapperV" android:background="@color/successColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f08014d" android:scaleType="centerInside"/>
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/awardTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="44dp" android:layout_below="@+id/awardWrapperV" android:layout_alignParentLeft="true">
+            <CheckBox android:textSize="14sp" android:textColor="@color/darkGrayColor" android:id="@+id/share_cb" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:text="@string/shareOnNewsFeed"/>
+            <View android:id="@+id/toolbarDivider" android:background="#32aaaaaa" android:visibility="gone" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/addPhotoBtn" android:paddingLeft="20dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/addPhotoWithIcon"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="#32aaaaaa" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/toolbar" android:layout_alignParentLeft="true"/>
+        <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="100dp" android:layout_below="@+id/divider" android:layout_alignParentLeft="true" android:scrollbarFadeDuration="0">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="14sp" android:textColor="@color/darkGrayColor" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/commentET" android:background="#00000000" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minLines="3" android:scrollHorizontally="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:inputType="none|text|textCapSentences|textMultiLine"/>
+                <ImageView android:id="@+id/photoIV" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:scaleType="fitStart" android:layout_below="@+id/commentET" android:layout_alignParentLeft="true"/>
+                <ImageView android:id="@+id/removePhotoBtn" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="0dp" android:src="0x7f08010d" android:scaleType="fitCenter" android:layout_below="@+id/commentET" android:layout_alignParentLeft="true" android:alpha="0.7"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</merge>

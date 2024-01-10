@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/headerWrapper" android:background="@drawable/week_view_sub_view_background" android:paddingLeft="17dp" android:paddingTop="18dp" android:paddingRight="17dp" android:paddingBottom="11dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+        <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/titleLbl" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:id="@+id/detailLbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:lineSpacingExtra="1dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/darkGreen" android:id="@+id/dateLbl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:lineSpacingExtra="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/noteViewWrapper" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="5dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="@color/textColor" android:layout_gravity="center_vertical" android:id="@+id/noteTV" android:padding="17dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/black25PercentColor" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/arrow" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="{fa-angle-right}"/>
+            </LinearLayout>
+            <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

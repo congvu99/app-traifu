@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/pinned_border" android:background="@color/pinned" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <FrameLayout android:id="@+id/photo_view_wrapper" android:background="@android:color/transparent" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="15dp" android:layout_marginTop="30dp" android:layout_marginBottom="0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/photo_view" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/placeholder_photo_view" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    </FrameLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/lightBlack" android:id="@+id/sub_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="30dp" android:layout_toRightOf="@+id/photo_view_wrapper" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="15sp" android:textColor="@color/storyTitleColor" android:id="@+id/title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_toRightOf="@+id/photo_view_wrapper" android:layout_below="@+id/sub_title_view"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textColor="@color/lightBlack" android:id="@+id/lock_icon_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp"/>
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textColor="@color/lightBlack" android:id="@+id/icon_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+        <LinearLayout android:gravity="center" android:id="@+id/more_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="5dp" android:src="@drawable/more_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/conversations_list_root" android:background="@color/intercom_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <io.intercom.android.sdk.views.IntercomToolbar android:id="@+id/intercom_toolbar" style="@style/intercom_toolbar_style"/>
+    <FrameLayout android:id="@+id/intercom_inbox_content" android:paddingTop="@dimen/intercom_toolbar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/intercom_error_inbox"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" android:accessibilityLiveRegion="polite" style="?android:attr/progressBarStyleLarge"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/inbox_recycler_view" android:background="@color/intercom_full_transparent_full_black" android:visibility="gone" android:layoutAnimation="@anim/intercom_inbox_layout_animator" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/intercom_top_shadow" android:layout_width="match_parent" android:layout_height="@dimen/intercom_app_bar_shadow_height"/>
+    </FrameLayout>
+</FrameLayout>

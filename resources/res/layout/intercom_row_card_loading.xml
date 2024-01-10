@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="@dimen/intercom_home_conversation_card_min_height" android:layout_marginLeft="@dimen/intercom_home_card_margin" android:layout_marginRight="@dimen/intercom_home_card_margin" style="@style/intercom_card_with_shadow">
+    <include layout="@layout/intercom_progress_bar"/>
+</FrameLayout>

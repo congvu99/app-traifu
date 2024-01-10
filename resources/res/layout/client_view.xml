@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/photoWrapper" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/client_photo_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/placeholder_photo_view" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/profile" android:scaleType="centerCrop" android:adjustViewBounds="true" android:tint="@color/grayColor"/>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/nameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_toRightOf="@+id/photoWrapper" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/plan_info_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/photoWrapper" android:layout_below="@+id/nameTV">
+        <TextView android:textSize="14sp" android:textColor="@color/black50PercentColor" android:id="@+id/last_plan_start_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/black50PercentColor" android:id="@+id/last_activity_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginBottom="5dp" android:layout_toRightOf="@+id/photoWrapper" android:layout_below="@+id/plan_info_view">
+        <ImageView android:id="@+id/planBtn" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="-10dp" android:src="@drawable/plan_icon"/>
+        <ImageView android:id="@+id/chatBtn" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="10dp" android:src="@drawable/chat_icon"/>
+        <ImageView android:id="@+id/moreBtn" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="10dp" android:src="@drawable/more_icon"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/right_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/coWrapper" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/tintColor" android:layout_gravity="right" android:id="@+id/coBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Switch to client app"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/coTipWrapper" android:visibility="gone" android:layout_width="310dp" android:layout_height="wrap_content" android:layout_marginLeft="0dp">
+                <com.joanzapata.iconify.widget.IconTextView android:textSize="40sp" android:textColor="@color/black25PercentColor" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{md-arrow-drop-up}"/>
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:background="@color/black25PercentColor" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/testDriveClientAppTip"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/sendInviteWrapper" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/tintColor" android:id="@+id/send_invite_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send app invite"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/onboardingWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/toolbar" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/sampleClientTip" android:background="@color/ghostWhiteColor" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black25PercentColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sampleClientTipTitle"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:id="@+id/sampleClientTipTV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/sampleClientTip"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/progress_photo_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/progress_photo" android:layout_width="match_parent" android:layout_height="180dp"/>
+        <View android:id="@+id/image_overlay" android:background="@color/imageOverlayColorLight" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <CheckBox android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/photo_cb" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:buttonTint="@color/white"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/textColor" android:id="@+id/date_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="5dp" android:layout_marginBottom="25dp">
+        <TextView android:textColor="@color/lightTextColor" android:id="@+id/progress_photo_detail" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

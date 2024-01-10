@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="0x7f0800e7" android:id="@+id/action_pick_date" android:visible="false" android:title="Date" app:showAsAction="always"/>
+    <item android:icon="0x7f080137" android:id="@+id/action_more" android:visible="false" android:title="✓" app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/change_date" android:title="Change Workout date"/>
+            <item android:id="@+id/cancel" android:title="@string/cancel"/>
+        </menu>
+    </item>
+    <item android:icon="@drawable/icon_send_black" android:id="@+id/action_save" android:visible="false" android:title="✓" app:showAsAction="always"/>
+</menu>

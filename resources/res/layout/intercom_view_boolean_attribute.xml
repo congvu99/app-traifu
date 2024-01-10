@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="200dp" android:animateLayoutChanges="true">
+    <include layout="@layout/intercom_attribute_name"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/intercom_attribute_input_height" style="@style/intercom_attribute_input_layout">
+        <TextView android:textSize="@dimen/intercom_attribute_text_size" android:textColor="@color/intercom_boolean_attribute_selected_text_selector" android:gravity="center" android:id="@+id/yes" android:background="@drawable/intercom_boolean_attribute_left_background_ripple" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/intercom_attribute_collector_positive" android:layout_weight="0.5"/>
+        <TextView android:textSize="@dimen/intercom_attribute_text_size" android:textColor="@color/intercom_boolean_attribute_selected_text_selector" android:gravity="center" android:id="@+id/no" android:background="@drawable/intercom_boolean_attribute_right_background_ripple" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/intercom_attribute_collector_negative" android:layout_weight="0.5" android:layout_marginStart="-1dp"/>
+    </LinearLayout>
+    <include layout="@layout/intercom_attribute_error"/>
+</LinearLayout>

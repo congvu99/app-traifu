@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ucw_nav_graph.xml" app:startDestination="@+id/uploadcareFragment">
+    <fragment android:name="com.uploadcare.android.widget.fragment.UploadcareFragment" android:id="@+id/uploadcareFragment">
+        <action android:id="@+id/action_uploadcareFragment_to_uploadcareFilesFragment" app:destination="@+id/uploadcareFilesFragment"/>
+    </fragment>
+    <fragment android:name="com.uploadcare.android.widget.fragment.UploadcareFilesFragment" android:id="@+id/uploadcareFilesFragment">
+        <argument android:name="socialsource" app:argType="com.uploadcare.android.widget.data.SocialSource"/>
+        <action android:id="@+id/action_uploadcareFilesFragment_to_uploadcareFilesFragment" app:destination="@+id/uploadcareFilesFragment"/>
+        <argument android:name="store" android:defaultValue="true" app:argType="boolean"/>
+        <argument android:name="cancelable" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="showProgress" android:defaultValue="false" app:argType="boolean"/>
+        <argument android:name="backgroundUpload" android:defaultValue="false" app:argType="boolean"/>
+    </fragment>
+</navigation>

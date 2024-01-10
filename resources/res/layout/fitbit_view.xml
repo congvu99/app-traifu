@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainView" android:background="@color/veryLightBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/notEnabled" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16sp" android:id="@+id/fitbit_headline" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fitbitHeadline1"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bulletOne"/>
+                <TextView android:textSize="16sp" android:textColorLink="@color/primaryBrown" android:id="@+id/instruction1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fitbitInstruction1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp">
+                <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bulletTwo"/>
+                <TextView android:textSize="16sp" android:id="@+id/instruction2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fitbitInstruction2"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:id="@+id/instructions_footer" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/fitbitInstructionFooter"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/enabled" android:background="@color/white" android:padding="15dp" android:paddingLeft="27dp" android:paddingRight="27dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="273dp" android:layout_height="273dp" android:layout_marginTop="26dp" android:src="@drawable/connect_success"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/textColor" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:text="Your are all set!"/>
+            <TextView android:textSize="16sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/integrationEnabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/fitbitIntegrationEnabled"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

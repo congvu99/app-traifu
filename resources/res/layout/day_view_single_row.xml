@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:background="@color/white" android:paddingLeft="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/left_border" android:background="@color/lightGrayColor" android:visibility="gone" android:layout_width="5dp" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="17dp" android:paddingTop="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/exercise_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+                        <FrameLayout android:id="@+id/videoIVWrapper" android:visibility="gone" android:layout_width="54dp" android:layout_height="wrap_content" android:layout_marginRight="17dp">
+                            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="5dp">
+                                <ImageView android:id="@+id/yt_thumbnail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+                                <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/playBtn" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_play_video"/>
+                            </androidx.cardview.widget.CardView>
+                        </FrameLayout>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/textColor" android:id="@+id/exercise" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/group_drill_toolbar" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_weight="1">
+                            <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/tintColor" android:id="@+id/editGroupDrillBtn" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/editSet" android:textAllCaps="true"/>
+                            <TextView android:textStyle="bold" android:textColor="@color/tintColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text=" • " android:layout_marginHorizontal="2dp"/>
+                            <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/tintColor" android:id="@+id/addToGroupDrillBtn" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD EXERCISE" android:textAllCaps="true"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="1">
+                        <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:id="@+id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                        <RelativeLayout android:id="@+id/toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/moveUpBtn" android:background="@color/veryLightBackground" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:text="{fa-arrow-up}" android:layout_alignParentTop="true"/>
+                                <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/moveDownBtn" android:background="@color/veryLightBackground" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="{fa-arrow-down}" android:layout_toRightOf="@+id/moveUpBtn" android:layout_alignParentTop="true"/>
+                                <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/deleteDrillBtn" android:background="@color/veryLightBackground" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:text="{md-delete}" android:layout_toRightOf="@+id/moveDownBtn" android:layout_alignParentTop="true"/>
+                                <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/editDrillBtn" android:padding="10dp" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="EDIT" android:layout_alignParentTop="true" android:textAllCaps="true"/>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/dragBtn" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/drag_icon"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                                <CheckBox android:id="@+id/drill_cb" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-7dp" android:layout_marginRight="30dp"/>
+                                <ImageView android:id="@+id/updateStatsBtn" android:padding="10dp" android:visibility="gone" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="-10dp" android:scaleType="centerInside"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/tipWrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:layout_alignParentLeft="true">
+                                <ImageView android:id="@+id/tipIV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                                <TextView android:textSize="14sp" android:textColor="@color/white" android:background="@color/darkGreen" android:padding="4dp" android:layout_width="220dp" android:layout_height="wrap_content" android:text="@string/markDoneTooltip"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/groupDrillToolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                        <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:id="@+id/group_drill_sets_wrapper" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/group_drill_sets_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="10 SETS" android:textAllCaps="false"/>
+                            <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/group_drill_note_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                        </LinearLayout>
+                        <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/deleteGroupDrillBtn" android:background="@color/veryLightBackground" android:visibility="gone" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:text="{md-delete}"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/groupDivider" android:background="@color/dividerColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="17dp"/>
+    </LinearLayout>
+</LinearLayout>

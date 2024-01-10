@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollview_wrapper" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/veryLightBackground" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="0dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/post_view" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="230dp" android:layout_weight="1" android:onClick="focusEditText">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16dp" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/note_view" android:background="@android:color/transparent" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/whatsOnYourMind" android:layout_weight="1" android:inputType="none|text|textCapSentences|textMultiLine">
+                        <requestFocus/>
+                    </EditText>
+                    <RelativeLayout android:layout_width="48dp" android:layout_height="48dp">
+                        <ImageView android:id="@+id/addPhotoBtn" android:visibility="gone" android:clickable="true" android:layout_width="72dp" android:layout_height="72dp" android:src="0x7f080238" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/photo_view_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" app:cardCornerRadius="5dp">
+                        <ImageView android:id="@+id/photo_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="215dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </androidx.cardview.widget.CardView>
+                    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:background="@drawable/icon_delete" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:elevation="3dp" app:tint="@color/white"/>
+                </FrameLayout>
+                <ListView android:id="@+id/file_list_view" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:divider="@null" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@color/dividerColor" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/link_view" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/very_light_border_white_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.loopj.android.image.SmartImageView android:id="@+id/link_image_view" android:background="@color/veryLightBackground" android:padding="5dp" android:layout_width="120dp" android:layout_height="120dp" android:layout_margin="1dp" android:scaleType="fitCenter"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/black25PercentColor" android:ellipsize="marquee" android:id="@+id/link_title_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_marginRight="5dp" android:layout_marginBottom="3dp" android:maxLines="2" android:layout_toRightOf="@+id/link_image_view" android:layout_alignParentTop="true"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/black75PercentColor" android:ellipsize="marquee" android:id="@+id/link_description_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_marginRight="5dp" android:layout_marginBottom="3dp" android:maxLines="2" android:layout_toRightOf="@+id/link_image_view" android:layout_below="@+id/link_title_view"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/denimColor" android:ellipsize="end" android:id="@+id/url_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:maxLines="1" android:layout_toRightOf="@+id/link_image_view" android:layout_below="@+id/link_description_view"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/advanced_layout_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:background="@color/backgroundColor" android:layout_width="wrap_content" android:layout_height="20dp"/>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp">
+                        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/shareOnNewsFeed" android:layout_weight="1"/>
+                        <Switch android:id="@+id/share_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/pin_cb_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pinThisPostToTop" android:layout_weight="1"/>
+                        <Switch android:id="@+id/pin_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/backgroundColor" android:layout_width="wrap_content" android:layout_height="20dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/notification_wrapper" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/send_inapp_notif_cb_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp">
+                        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sendInAppNotification" android:layout_weight="1"/>
+                        <Switch android:id="@+id/send_inapp_notif_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/send_push_notif_cb_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sendPushNotification" android:layout_weight="1"/>
+                        <Switch android:id="@+id/send_push_notif_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/pm_wrapper" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                        <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:id="@+id/pm_title_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/pushNotificationMessage"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/black50PercentColor" android:id="@+id/pm_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/pm_title_view"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/black50PercentColor" android:id="@+id/pm_view_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="5dp" android:text="@string/pushMessageHint" android:layout_below="@+id/pm_view"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/backgroundColor" android:layout_width="wrap_content" android:layout_height="20dp"/>
+                <View android:id="@+id/empty_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/groups_view_wrapper" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="16sp" android:textColor="@color/black50PercentColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="VISIBLE TO"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                        <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Everyone" android:layout_weight="1"/>
+                        <Switch android:id="@+id/everyone_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                    </LinearLayout>
+                    <TextView android:textSize="13sp" android:textColor="@color/black50PercentColor" android:id="@+id/everyone_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/groupSelectionHint"/>
+                    <ListView android:id="@+id/groups_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="25dp" android:divider="@null" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/workout_share_wrapper" android:background="@color/veryLightBackground" android:paddingBottom="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="100dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/addFilesBtn" android:background="@color/white" android:padding="17dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/textColor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/addFiles" android:layout_weight="1"/>
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/add_icon"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="17dp" android:paddingTop="11dp" android:paddingRight="14dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/shareOnNewsFeed" android:layout_weight="1"/>
+                    <Switch android:theme="@style/brownSwitch" android:id="@+id/workout_share_cb" android:layout_width="56dp" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:switchMinWidth="56dp"/>
+                </LinearLayout>
+                <View android:background="@color/dividerColor" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/submit_btn" android:background="@color/tintColor" android:clickable="true" android:layout_width="280dp" android:layout_height="44dp" android:layout_marginLeft="15dp" android:text="@string/save"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:id="@+id/bottom_options_view" android:background="@drawable/white_background_top_shadow" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/add_photo_btn" android:background="@color/white" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/picture_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_add_cover" android:scaleType="centerInside"/>
+                    </LinearLayout>
+                    <View android:background="@color/dividerColor" android:layout_width="1dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/add_attachment_btn" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/attachment_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_attachment" android:scaleType="centerInside"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="right" android:background="@color/dividerColor" android:layout_width="1dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/advanced_btn" android:background="@color/white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <com.joanzapata.iconify.widget.IconTextView android:textSize="22sp" android:textColor="@color/lightBlack" android:id="@+id/share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{fa-cog}"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="right" android:background="@color/dividerColor" android:layout_width="1dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/post_btn_wrapper" android:background="@color/white" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/postBtn" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_send_black" android:scaleType="centerInside"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

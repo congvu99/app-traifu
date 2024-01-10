@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <Transition app:constraintSetEnd="@+id/sad_end" app:constraintSetStart="@+id/start" app:duration="@integer/intercom_reaction_grow_time">
+        <KeyFrameSet/>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/intercom_reaction_neutral" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_happy" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_sad" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_sad" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_neutral" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_happy" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_neutral" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/sad_end">
+        <Constraint android:id="@+id/intercom_reaction_sad" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_neutral" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_neutral" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_happy" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_sad" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_happy" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_neutral" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/neutral_end" app:deriveConstraintsFrom="@+id/start">
+        <Constraint android:id="@+id/intercom_reaction_neutral" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_happy" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_sad" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_sad" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_neutral" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_happy" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_neutral" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@+id/neutral_end" app:constraintSetStart="@+id/start" app:duration="@integer/intercom_reaction_grow_time"/>
+    <ConstraintSet android:id="@+id/happy_end" app:deriveConstraintsFrom="@+id/start">
+        <Constraint android:id="@+id/intercom_reaction_happy" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_neutral" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="0"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_sad" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_neutral" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+        <Constraint android:id="@+id/intercom_reaction_neutral" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginTop="16dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:layout_constraintEnd_toStartOf="@+id/intercom_reaction_happy" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@+id/intercom_reaction_sad" app:layout_constraintTop_toBottomOf="@+id/intercom_reaction_title">
+            <CustomAttribute app:attributeName="grayscale" app:customIntegerValue="100"/>
+        </Constraint>
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@+id/happy_end" app:constraintSetStart="@+id/start" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/neutral_end" app:constraintSetStart="@+id/happy_end" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/sad_end" app:constraintSetStart="@+id/happy_end" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/happy_end" app:constraintSetStart="@+id/sad_end" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/neutral_end" app:constraintSetStart="@+id/sad_end" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/sad_end" app:constraintSetStart="@+id/neutral_end" app:duration="@integer/intercom_reaction_grow_time"/>
+    <Transition app:constraintSetEnd="@+id/happy_end" app:constraintSetStart="@+id/neutral_end" app:duration="@integer/intercom_reaction_grow_time"/>
+</MotionScene>

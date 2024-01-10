@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ccc9cc" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#000000" android:id="@+id/no_of_sets" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/no_of_sets_number" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_alignParentRight="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/weight_per_set" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_below="@+id/no_of_sets" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/weight_per_set_number" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_below="@+id/no_of_sets" android:layout_alignParentRight="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/repetitions_per_sets" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_below="@+id/weight_per_set" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/repetitions_per_sets_number" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Demo" android:layout_below="@+id/weight_per_set" android:layout_alignParentRight="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/rest" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/repetitions_per_sets" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Excersice"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#000000" android:id="@+id/youtube" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/instructions" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+            <TextView android:textColor="#000000" android:id="@+id/instruction_notes" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="200dp" android:animateLayoutChanges="true">
+    <include layout="@layout/intercom_attribute_name"/>
+    <TextView android:textSize="@dimen/intercom_attribute_text_size" android:textColor="@color/intercom_attribute_input_text" android:textColorHint="@color/intercom_attribute_input_hint" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/attribute_input" android:background="@drawable/intercom_text_attribute_input_background" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="@dimen/intercom_attribute_input_height" android:hint="@string/intercom_choose_one" android:singleLine="true" android:drawableEnd="@drawable/intercom_list_arrow_down" style="@style/intercom_attribute_input_layout"/>
+    <include layout="@layout/intercom_attribute_error"/>
+</LinearLayout>

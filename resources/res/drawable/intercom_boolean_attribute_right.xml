@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:shape="rectangle">
+    <solid android:color="@color/intercom_white"/>
+    <stroke android:width="@dimen/intercom_attribute_stroke_size" android:color="@color/intercom_attribute_input_outline"/>
+    <corners android:topLeftRadius="0dp" android:topRightRadius="@dimen/intercom_attribute_radius" android:bottomLeftRadius="0dp" android:bottomRightRadius="@dimen/intercom_attribute_radius"/>
+</shape>

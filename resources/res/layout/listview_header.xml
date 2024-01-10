@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rateAppOuterWrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rateAppInnerWrapper" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black25PercentColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enjoyingTrainerFu"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/rateChoiceWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="5dp">
+                <TextView android:textSize="18sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/unlikeBtn" android:background="@drawable/white_bordered_rounded_background" android:padding="10dp" android:clickable="true" android:layout_width="110dp" android:layout_height="wrap_content" android:text="@string/notReally"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/likeBtn" android:background="@color/tintColor" android:padding="10dp" android:clickable="true" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/yesExclaim"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:background="#f3f3f3" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ctaWrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_centerHorizontal="true">
+                <com.trainerfu.android.CTAButton android:id="@+id/uploadProfilePhotoBtn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_detail="Help your coach to recognize you" app:ctabutton_icon_resource="@drawable/upload_profile_photo" app:ctabutton_title="Upload Profile Photo"/>
+                <com.trainerfu.android.CTAButton android:id="@+id/nextWorkoutBtn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_icon_resource="@drawable/workout_from_plan" app:ctabutton_title="@string/startNextWorkout"/>
+                <com.trainerfu.android.CTAButton android:id="@+id/logWorkoutBtn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_detail="A workout outside of your plan" app:ctabutton_icon_resource="@drawable/log_freestyle_workout" app:ctabutton_title="@string/logAWorkout"/>
+                <com.trainerfu.android.CTAButton android:id="@+id/trackProgressBtn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_detail="Weight, progress photos, BF%" app:ctabutton_icon_resource="@drawable/track_progress" app:ctabutton_title="@string/trackProgress"/>
+                <com.trainerfu.android.CTAButton android:id="@+id/chatWithCoachBtn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_detail="Have a question. Ask here" app:ctabutton_icon_resource="@drawable/chat_with_coach" app:ctabutton_title="@string/chatWithCoach"/>
+                <com.trainerfu.android.CTAButton android:id="@+id/habitBtn" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="65dp" app:ctabutton_detail="@string/habit_sub_title" app:ctabutton_icon_resource="@drawable/habit_icon" app:ctabutton_title="@string/habit_title"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rateAppOuterWrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ctaWrapper" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:id="@+id/rateAppInnerWrapper" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black25PercentColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enjoyingTrainerFu"/>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/rateChoiceWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="5dp">
+                        <TextView android:textSize="18sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/unlikeBtn" android:background="@drawable/white_bordered_rounded_background" android:padding="10dp" android:clickable="true" android:layout_width="110dp" android:layout_height="wrap_content" android:text="@string/notReally"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/likeBtn" android:background="@color/tintColor" android:padding="10dp" android:clickable="true" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/yesExclaim"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="55dp" android:layout_below="@+id/rateAppOuterWrapper">
+                <com.trainerfu.android.StatsView android:id="@+id/statsView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/goToTrainerBtn" android:background="@drawable/top_shadow" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="55dp">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/goToTrainer"/>
+    </LinearLayout>
+</FrameLayout>

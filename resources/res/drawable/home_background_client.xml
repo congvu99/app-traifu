@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tintColor"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center_horizontal" android:src="0x7f080092"/>
+    </item>
+</layer-list>

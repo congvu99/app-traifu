@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/listview_selector" android:paddingLeft="17dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/photoWrapper" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginRight="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profileIV" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile" android:tint="@color/grayColor"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="90dp">
+            <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black50PercentColor" android:id="@+id/detail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:paddingTop="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="24sp" android:textColor="@color/assessmentIconColor" android:id="@+id/bar_chart_icon" android:layout_width="24dp" android:layout_height="24dp" android:text="{fa-bar-chart-o}"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/assessment_name" android:paddingTop="10dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assessment" android:maxLines="1"/>
+            <TextView android:textSize="22sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/assessment_measure" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assessment" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/goal_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_goal" android:scaleType="fitCenter"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Goal"/>
+            <TextView android:textSize="22sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/goal_value" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assessment" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="24sp" android:textColor="@color/calendarIconColor" android:layout_width="24dp" android:layout_height="24dp" android:text="{fa-calendar-o}"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DaysLeft"/>
+            <TextView android:textSize="22sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/days_left" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assessment" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_weight="1">
+            <com.github.lzyzsd.circleprogress.DonutProgress android:id="@+id/donut_progress_view" android:paddingLeft="0dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="10dp" android:layout_marginStart="-3dp" app:donut_circle_starting_degree="270" app:donut_finished_color="@color/goalFinishedColor" app:donut_finished_stroke_width="6dp" app:donut_text_color="@color/black25PercentColor" app:donut_text_size="0sp" app:donut_unfinished_color="@color/goalUnfinishedColor" app:donut_unfinished_stroke_width="6dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Progress"/>
+            <TextView android:textSize="22sp" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/percent_complete" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assessment" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DayNight">
+    </style>
+    <style name="Theme.Material3.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.Material3.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    </style>
+    <style name="ThemeOverlay.AppCompat.DayNight">
+    </style>
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight">
+    </style>
+    <style name="UploadcareWidget">
+        <item name="android:colorBackground">@color/ucw_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="colorOnBackground">@color/ucw_on_background</item>
+        <item name="colorOnPrimary">@color/ucw_on_primary</item>
+        <item name="colorOnSecondary">@color/ucw_on_secondary</item>
+        <item name="colorOnSurface">@color/ucw_on_surface</item>
+        <item name="colorPrimary">?attr/uploadcareColorPrimary</item>
+        <item name="colorPrimaryVariant">?attr/uploadcareColorPrimaryVariant</item>
+        <item name="colorSecondary">?attr/uploadcareColorSecondary</item>
+        <item name="colorSecondaryVariant">@color/ucw_secondary_500</item>
+        <item name="colorSurface">@color/ucw_background</item>
+    </style>
+    <style name="UploadcareWidget.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:animationDuration">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="colorOnBackground">@color/ucw_on_background</item>
+        <item name="colorOnPrimary">@color/ucw_on_primary</item>
+        <item name="colorOnSecondary">@color/ucw_on_secondary</item>
+        <item name="colorOnSurface">@color/ucw_on_surface</item>
+        <item name="colorPrimary">?attr/uploadcareColorPrimary</item>
+        <item name="colorPrimaryVariant">?attr/uploadcareColorPrimaryVariant</item>
+        <item name="colorSecondary">?attr/uploadcareColorSecondary</item>
+        <item name="colorSecondaryVariant">@color/ucw_secondary_500</item>
+        <item name="colorSurface">@color/ucw_background</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="UploadcareWidget.PopupOverlay">
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface">
+    </style>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface">
+    </style>
+</resources>

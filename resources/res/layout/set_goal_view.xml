@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/black50PercentColor" android:gravity="center_vertical" android:id="@+id/current_measure_label" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/Current"/>
+        <EditText android:textSize="16dp" android:textColor="@color/black25PercentColor" android:gravity="right" android:id="@+id/current_measure_edit_view" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:inputType="numberDecimal" android:textCursorDrawable="@null"/>
+    </LinearLayout>
+    <View android:background="@color/lightGrayColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/black50PercentColor" android:gravity="center_vertical" android:id="@+id/target_measure_label" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/Target"/>
+        <EditText android:textSize="16dp" android:textColor="@color/black25PercentColor" android:gravity="right" android:id="@+id/target_measure_edit_view" android:background="@android:color/transparent" android:focusable="true" android:layout_width="0dp" android:layout_height="44dp" android:layout_weight="1" android:inputType="numberDecimal" android:textCursorDrawable="@null"/>
+    </LinearLayout>
+    <View android:background="@color/lightGrayColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/black50PercentColor" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/TargetDate" android:layout_weight="1"/>
+        <TextView android:textSize="16dp" android:textColor="@color/black25PercentColor" android:gravity="center_vertical" android:id="@+id/date_view" android:clickable="true" android:layout_width="wrap_content" android:layout_height="44dp"/>
+    </LinearLayout>
+    <View android:background="@color/lightGrayColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/cancel_btn" android:background="@color/darkGrayColor" android:clickable="true" android:layout_width="100dp" android:layout_height="44dp" android:text="@string/Cancel"/>
+        <Button android:enabled="true" android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/save_btn" android:background="@color/tintColor" android:clickable="true" android:layout_width="100dp" android:layout_height="44dp" android:layout_marginLeft="10dp" android:text="@string/Save"/>
+    </LinearLayout>
+</LinearLayout>

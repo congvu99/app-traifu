@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/tintColor" android:id="@+id/email_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginTop="20dp" android:hint="Email" app:hintTextAppearance="@style/HintTextAppearance">
+            <EditText android:theme="@style/EditTextTheme" android:id="@+id/email" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:inputType="textEmailAddress" android:backgroundTint="@color/tintColor">
+                <requestFocus/>
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/tintColor" android:id="@+id/password_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginTop="20dp" android:hint="Password" app:hintTextAppearance="@style/HintTextAppearance" app:passwordToggleEnabled="true">
+            <EditText android:theme="@style/EditTextTheme" android:id="@+id/password" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="20dp" android:inputType="textPassword" android:imeOptions="actionDone" android:backgroundTint="@color/tintColor"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="18dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <TextView android:textColor="@color/tintColor" android:layout_gravity="center" android:id="@+id/forgot_password" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgot_your_password" android:layout_weight="1"/>
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/loginBtn" android:background="@drawable/login_button_background" android:clickable="true" android:layout_width="120dp" android:layout_height="50dp" android:text="@string/login" android:layout_weight="1" android:elevation="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColorLink="@color/tintColor" android:id="@+id/privacy_policy" android:paddingLeft="18dp" android:paddingTop="30dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy"/>
+    </LinearLayout>
+</LinearLayout>

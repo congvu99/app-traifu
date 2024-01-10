@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/assessment_chart_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.gigamole.navigationtabstrip.NavigationTabStrip android:id="@+id/durationPicker" android:layout_width="match_parent" android:layout_height="50dp" app:nts_active_color="@color/tintColor" app:nts_animation_duration="100" app:nts_color="@color/tintColor" app:nts_corners_radius="1.5dp" app:nts_factor="2.5" app:nts_gravity="0" app:nts_inactive_color="@color/lightTextColor" app:nts_size="15sp" app:nts_titles="@array/assessment_durations" app:nts_type="0" app:nts_weight="3dp"/>
+    <com.github.mikephil.charting.charts.LineChart android:id="@+id/chart" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/empty_assessment_view" android:background="@color/chartBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp">
+        <ImageView android:layout_width="170dp" android:layout_height="170dp" android:src="@drawable/empty_assessment"/>
+    </LinearLayout>
+    <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black25PercentColor" android:gravity="center" android:id="@+id/addData" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/addData" android:shadowColor="@color/dividerColor" android:shadowDx="3" android:shadowDy="3"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/goal_wrapper_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+        <View android:id="@+id/divider" android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/goal_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15sp" android:textColor="@color/black25PercentColor" android:id="@+id/goal_detail_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/completed_view" android:background="@color/successColor" android:layout_width="1dp" android:layout_height="3dp" android:layout_below="@+id/goal_detail_view" android:layout_alignLeft="@+id/total_view"/>
+            <View android:id="@+id/total_view" android:background="@color/lightGrayColor" android:layout_width="220dp" android:layout_height="1dp" android:layout_below="@+id/completed_view" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black25PercentColor" android:gravity="center" android:id="@+id/set_goal_btn" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/setGoalBtnText" android:shadowColor="@color/grayColor" android:shadowDx="3" android:shadowDy="3"/>
+    </LinearLayout>
+    <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

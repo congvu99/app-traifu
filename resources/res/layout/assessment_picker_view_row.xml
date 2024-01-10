@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/black25PercentColor" android:id="@+id/headerTextView" android:padding="10dp" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <View android:background="@color/black75PercentColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="80dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="80dp"/>
+        <TextView android:id="@+id/hackView" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

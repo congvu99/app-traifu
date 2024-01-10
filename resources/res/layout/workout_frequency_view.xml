@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <TextView android:textSize="14sp" android:textColor="@color/grayColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/date_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:id="@+id/w7" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="3dp"/>
+    <View android:id="@+id/w6" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+    <View android:id="@+id/w5" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+    <View android:id="@+id/w4" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+    <View android:id="@+id/w3" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+    <View android:id="@+id/w2" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+    <View android:id="@+id/w1" android:background="@color/lightBackground" android:layout_width="6dp" android:layout_height="15dp" android:layout_marginTop="2dp"/>
+</merge>

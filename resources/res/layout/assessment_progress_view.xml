@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingTop="30dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/border_top" android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+    <com.trainerfu.story.AssessmentProgressCellView android:id="@+id/thirty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    <com.trainerfu.story.AssessmentProgressCellView android:id="@+id/sixty_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    <com.trainerfu.story.AssessmentProgressCellView android:id="@+id/ninety_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+    <com.trainerfu.story.AssessmentProgressCellView android:id="@+id/overall_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+</LinearLayout>

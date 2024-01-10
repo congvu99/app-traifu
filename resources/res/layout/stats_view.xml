@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:id="@+id/leftView" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <com.trainerfu.android.WorkoutFrequencyView android:gravity="center" android:id="@+id/frequencyViewWeek5" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+        <com.trainerfu.android.WorkoutFrequencyView android:gravity="center" android:id="@+id/frequencyViewWeek4" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/frequencyViewWeek5"/>
+        <com.trainerfu.android.WorkoutFrequencyView android:gravity="center" android:id="@+id/frequencyViewWeek3" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/frequencyViewWeek4"/>
+        <com.trainerfu.android.WorkoutFrequencyView android:gravity="center" android:id="@+id/frequencyViewWeek2" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/frequencyViewWeek3"/>
+        <com.trainerfu.android.WorkoutFrequencyView android:gravity="center" android:id="@+id/frequencyViewWeek1" android:layout_width="45dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/frequencyViewWeek2"/>
+        <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/frequencyTitleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/workoutFrequencyTitle" android:layout_below="@+id/frequencyViewWeek5" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_toRightOf="@+id/leftView" android:layout_alignTop="@+id/leftView" android:layout_alignParentRight="true">
+        <TextView android:textSize="34sp" android:textColor="@color/textColor" android:id="@+id/totalValueTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:fontFamily="@font/montserrat_light"/>
+        <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/totalTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/overall"/>
+        <View android:id="@+id/divider" android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/recentValueWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="34sp" android:textStyle="normal" android:textColor="@color/textColor" android:id="@+id/recentValueTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:fontFamily="@font/montserrat_light"/>
+            <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/recentTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Last 30 days"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.gigamole.navigationtabstrip.NavigationTabStrip android:id="@+id/ownerPicker" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" app:nts_active_color="@color/primary" app:nts_animation_duration="100" app:nts_color="@color/primary" app:nts_corners_radius="1.5dp" app:nts_factor="2.5" app:nts_gravity="0" app:nts_inactive_color="@color/black50PercentColor" app:nts_size="15sp" app:nts_titles="@array/mine_all" app:nts_type="0" app:nts_weight="3dp"/>
+    <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-7dp" android:layout_marginBottom="-8dp" android:indeterminate="true" android:minHeight="20dp" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+    <View android:background="@drawable/bottom_shadow" android:layout_width="wrap_content" android:layout_height="2dp"/>
+</LinearLayout>

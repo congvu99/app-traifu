@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/nutrition_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="@string/dailyNutritionGoal"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginVertical="12dp" android:paddingHorizontal="15dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/calories" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:id="@+id/calories_goal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginVertical="12dp" android:paddingHorizontal="15dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:id="@+id/protein_label" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/protein" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:id="@+id/protein_goal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginVertical="12dp" android:paddingHorizontal="15dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:id="@+id/fat_label" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fat" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:id="@+id/fat_goal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginVertical="12dp" android:paddingHorizontal="15dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:id="@+id/carbs_label" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/carbs" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:id="@+id/carbs_goal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/nutrition_btn_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginVertical="10dp">
+                    <com.joanzapata.iconify.widget.IconTextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/edit_daily_nutrition_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/editDailyNutritionGoal"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/nutrition_logs_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <ListView android:id="@+id/nutrition_logs_list" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:cacheColorHint="#00000000" android:divider="@color/dividerColor" android:dividerHeight="1dp" android:layout_weight="1"/>
+                <View android:background="@color/dividerColor" android:layout_width="wrap_content" android:layout_height="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

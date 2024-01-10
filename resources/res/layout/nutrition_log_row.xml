@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/lightBackground" android:layout_width="match_parent" android:layout_height="25dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/lightBackground" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/date_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="right" android:id="@+id/goal_header" android:visibility="gone" android:layout_width="100dp" android:layout_height="wrap_content" android:text="Goal" android:layout_toLeftOf="@+id/total"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="right" android:id="@+id/total" android:layout_width="100dp" android:layout_height="wrap_content" android:text="Total" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp" android:paddingVertical="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calories" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/calories_goal" android:visibility="gone" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/calories_total"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/calories_total" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp" android:paddingVertical="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Protein(g)" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/protein_goal" android:visibility="gone" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/protein_total"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/protein_total" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp" android:paddingVertical="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fat(g)" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/fat_goal" android:visibility="gone" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/fat_total"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/fat_total" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp" android:paddingVertical="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Carbs(g)" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/carbs_goal" android:visibility="gone" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/carbs_total"/>
+            <TextView android:textSize="16sp" android:gravity="right" android:id="@+id/carbs_total" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginVertical="10dp">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/see_meal_log_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seeMealLog"/>
+        </LinearLayout>
+        <View android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

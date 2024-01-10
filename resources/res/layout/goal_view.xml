@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.lzyzsd.circleprogress.DonutProgress android:id="@+id/donut_progress_view" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="10dp" app:donut_finished_color="@color/successColor" app:donut_finished_stroke_width="6dp" app:donut_text_color="@color/black25PercentColor" app:donut_text_size="15sp" app:donut_unfinished_color="@color/successColor" app:donut_unfinished_stroke_width="1dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="15sp" android:textColor="@color/black25PercentColor" android:id="@+id/title_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="@color/black50PercentColor" android:id="@+id/days_left_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

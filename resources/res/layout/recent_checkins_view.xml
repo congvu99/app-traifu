@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/border_top" android:background="@color/dividerColor" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/checkin_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="left" android:layout_gravity="left" android:id="@+id/checkin_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:background="@color/dividerColor" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

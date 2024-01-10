@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/week_view_row_background" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/titleLabel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/playWrapper" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="20dp" android:layout_height="20dp" android:text="{fa-play-circle-o}"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Watch Video"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/readWrapper" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="20sp" android:textColor="@color/tintColor" android:gravity="center" android:focusable="true" android:clickable="true" android:layout_width="20dp" android:layout_height="20dp" android:text="{fa-book}"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Read Article"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

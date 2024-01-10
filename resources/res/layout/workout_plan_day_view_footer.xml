@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/noteViewWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <include layout="@layout/horizontal_divider"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black25PercentColor" android:id="@+id/noteView" android:background="#ffffff" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include layout="@layout/horizontal_divider"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <include layout="@layout/horizontal_divider"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/addExerciseBtn" android:background="#ffffff" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/addExercise" android:layout_weight="1"/>
+            <include layout="@layout/vertical_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/editNotesBtn" android:background="#ffffff" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/editNotes" android:layout_weight="1"/>
+        </LinearLayout>
+        <include layout="@layout/horizontal_divider"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/addSupersetBtn" android:background="#ffffff" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/addSuperset" android:layout_weight="1"/>
+            <include layout="@layout/vertical_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/addCircuitBtn" android:background="#ffffff" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/addCircuit" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/copyFromTemplateWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/horizontal_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/copyFromTemplateBtn" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/copyWorkoutFromTemplate"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/saveToTemplateWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/horizontal_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/saveToTemplateBtn" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/saveWorkoutToTemplate"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/trackWorkoutWrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/horizontal_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/trackWorkoutBtn" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/trackThisWorkout"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/reorderOrDeleteWrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/horizontal_divider"/>
+            <TextView android:textSize="16sp" android:textColor="@color/tintColor" android:gravity="center" android:id="@+id/reorderOrDeleteBtn" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/reorderOrDeleteExercise"/>
+        </LinearLayout>
+        <include layout="@layout/horizontal_divider"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tracking_toolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/mark_all_done_btn" android:background="@color/tintColor" android:clickable="true" android:layout_width="280dp" android:layout_height="44dp" android:text="@string/MarkAllDoneBtnText"/>
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cancel_workout_btn" android:background="@color/darkGrayColor" android:clickable="true" android:layout_width="280dp" android:layout_height="44dp" android:layout_marginTop="10dp" android:text="@string/cancelWorkoutBtnText"/>
+        <com.joanzapata.iconify.widget.IconTextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/end_workout_btn" android:background="@color/darkGrayColor" android:visibility="gone" android:clickable="true" android:layout_width="280dp" android:layout_height="44dp" android:layout_marginTop="10dp" android:text="@string/endWorkoutBtnText"/>
+    </LinearLayout>
+    <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="60dp"/>
+</LinearLayout>

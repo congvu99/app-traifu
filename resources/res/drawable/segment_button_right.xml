@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="1dp" android:color="@color/tintColor"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+            <item android:top="1dp" android:right="1dp" android:bottom="1dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/tintColor"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="1dp" android:color="@color/tintColor"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+            <item android:top="1dp" android:right="1dp" android:bottom="1dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/tintColor"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:width="1dp" android:color="@color/tintColor"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+            <item android:top="1dp" android:right="1dp" android:bottom="1dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white"/>
+                    <corners android:topRightRadius="12dp" android:bottomRightRadius="12dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

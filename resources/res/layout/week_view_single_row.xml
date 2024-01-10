@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/week_view_row_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="1dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <androidx.cardview.widget.CardView android:id="@+id/due_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:layout_marginBottom="3dp" app:cardCornerRadius="4dp">
+            <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/due_text" android:background="@color/darkGreen" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/day_row_view" android:paddingLeft="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                <TextView android:textSize="16sp" android:textColor="@color/lightTextColor" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SUN" android:layout_weight="1"/>
+                <ImageView android:id="@+id/moreBtn" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/more_icon"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/noWorkout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/noWorkout"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/textColor" android:id="@+id/type" android:paddingLeft="17dp" android:paddingRight="30dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1"/>
+        <ListView android:id="@+id/day_detail_list" android:background="@color/white" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:listSelector="@android:color/transparent" android:divider="@null"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dayToolbar" android:paddingLeft="17dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.joanzapata.iconify.widget.IconTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/tintColor" android:gravity="right" android:layout_gravity="center" android:id="@+id/editWorkoutBtn" android:padding="10dp" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:text="EDIT" android:textAllCaps="true"/>
+            <LinearLayout android:gravity="right" android:layout_gravity="right" android:id="@+id/detail_icons_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_weight="1">
+                <ImageView android:id="@+id/detail_icon" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/arrow_down"/>
+                <ImageView android:id="@+id/collapse_icon" android:padding="10dp" android:visibility="gone" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/arrow_up"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

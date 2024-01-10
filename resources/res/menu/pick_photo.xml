@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/choosePhotoItem" android:title="@string/choosePhoto"/>
+    <item android:id="@+id/takePhotoItem" android:title="@string/takePhoto"/>
+    <item android:id="@+id/cancelItem" android:title="@string/cancel"/>
+</menu>
